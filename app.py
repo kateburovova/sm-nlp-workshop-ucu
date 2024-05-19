@@ -32,16 +32,22 @@ import streamlit.components.v1 as components
 st.set_page_config(layout="wide")
 
 
-# Displaying the LaTeX formula for Betweenness Centrality
 st.markdown(r'''
 Betweenness centrality quantifies the number of times a node acts as a bridge along the shortest path between two other nodes.
 ''')
 
-# Additional explanatory text
-st.write("where \\(|V|\\) is the number of nodes in the graph.")
-
-
 show_html_graph('assets/recovery_win_betweenness_centrality_size_viz.html')
+
+file_path = 'assets/facebook_sample.csv'
+
+with open(file_path, "rb") as file:
+    btn = st.download_button(
+        label="Download CSV",
+        data=file,
+        file_name='sample_data.csv',
+        mime='text/csv',
+        help="Click to download the CSV file."
+    )
 
 
 if not check_password():

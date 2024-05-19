@@ -13,7 +13,7 @@ show_download_button(file_path='assets/facebook_sample.csv',
                      file_name='FB_sample_data.csv',
                      help='Click to download FB sample data')
 
-st.markdown('<hr style="border:2px solid gray">', unsafe_allow_html=True)
+st.markdown('<hr style="border:1px solid black">', unsafe_allow_html=True)
 
 display_csv_preview(file_path='assets/twitter_sample.csv', file_name='X sample')
 
@@ -22,7 +22,7 @@ show_download_button(file_path='assets/twitter_sample.csv',
                      file_name='X_sample_data.csv',
                      help='Click to download X sample data')
 
-st.markdown('<hr style="border:2px solid gray">', unsafe_allow_html=True)
+st.markdown('<hr style="border:1px solid black">', unsafe_allow_html=True)
 
 display_csv_preview(file_path='assets/telegram_sample.csv', file_name='Telegram sample')
 
@@ -31,7 +31,7 @@ show_download_button(file_path='assets/telegram_sample.csv',
                      file_name='TG_sample_data.csv',
                      help='Click to download TG sample data')
 
-st.markdown('<hr style="border:2px solid gray">', unsafe_allow_html=True)
+st.markdown('<hr style="border:1px solid black">', unsafe_allow_html=True)
 
 st.markdown(r'''
 Betweenness centrality quantifies the number of times a node acts as a bridge along the shortest path between two other nodes.

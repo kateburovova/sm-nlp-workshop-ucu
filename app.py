@@ -32,12 +32,10 @@ import streamlit.components.v1 as components
 st.set_page_config(layout="wide")
 
 
-st.write("""
-Betweenness centrality quantifies the number of times a node acts as a bridge along the shortest path between two other nodes. Let \\(\\sigma(V_j, V_k)\\) be the number of shortest paths from node \\(V_j\\) to node \\(V_k\\), and \\(\\sigma(V_j, V_k | V_i)\\) the number of those paths that pass through node \\(V_i\\). The betweenness centrality of a node \\(V_i\\) is given by:
-""")
-
 # Displaying the LaTeX formula for Betweenness Centrality
 st.latex(r'''
+Betweenness centrality quantifies the number of times a node acts as a bridge along the shortest path between two other nodes. Let \\(\\sigma(V_j, V_k)\\) be the number of shortest paths from node \\(V_j\\) to node \\(V_k\\), and \\(\\sigma(V_j, V_k | V_i)\\) the number of those paths that pass through node \\(V_i\\). The betweenness centrality of a node \\(V_i\\) is given by:
+
 C_B(V_i) = \sum_{{V_i \neq V_j \neq V_k \in V}} \frac{\sigma(V_j, V_k | V_i)}{\sigma(V_j, V_k)} \times \frac{2}{(|V| - 1)(|V| - 2)}
 ''')
 

@@ -27,10 +27,9 @@ show_download_button(file_path='assets/twitter_sample.csv',
                      file_name='X_sample_data.csv',
                      help='Click to download X sample data')
 
-display_csv_preview(file_path='assets/facebook_sample.csv', file_name='Telegram sample')
+display_csv_preview(file_path='assets/telegram_sample.csv', file_name='Telegram sample')
 
-
-show_download_button(file_path='assets/X_sample.csv',
+show_download_button(file_path='assets/telegram_sample.csv',
                      label='Download TG sample',
                      file_name='TG_sample_data.csv',
                      help='Click to download TG sample data')

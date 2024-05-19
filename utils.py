@@ -1,5 +1,6 @@
 import streamlit as st
 import streamlit.components.v1 as components
+import pandas as pd
 
 
 def show_html_graph(file_path, height=600):
@@ -18,3 +19,13 @@ def show_download_button(file_path, label, file_name, help):
             mime='text/csv',
             help=help
         )
+
+
+def display_csv_preview(file_path, file_name):
+    try:
+        df = pd.read_csv(file_path)
+        st.write(f"Preview of {file_name}:")
+        st.dataframe(df.head(20))
+
+    except Exception as e:
+        st.error(f"Failed to read {file_name}: {str(e)}")

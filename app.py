@@ -39,5 +39,3 @@ Betweenness centrality quantifies the number of times a node acts as a bridge al
 
 show_html_graph('assets/recovery_win_betweenness_centrality_size_viz.html')
 
-st.markdown('<hr style="border:2px solid gray">', unsafe_allow_html=True)
-

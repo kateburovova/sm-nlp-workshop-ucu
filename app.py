@@ -11,22 +11,20 @@ st.markdown(r'''
 Betweenness centrality quantifies the number of times a node acts as a bridge along the shortest path between two other nodes.
 ''')
 
-st.markdown('<hr style="border:2px solid gray">', unsafe_allow_html=True)
-
 show_html_graph('assets/recovery_win_betweenness_centrality_size_viz.html')
 
-display_csv_preview(file_path='assets/facebook_sample.csv', file_name='Facebook sample')
-
 st.markdown('<hr style="border:2px solid gray">', unsafe_allow_html=True)
+
+display_csv_preview(file_path='assets/facebook_sample.csv', file_name='Facebook sample')
 
 show_download_button(file_path='assets/facebook_sample.csv',
                      label='Download FB sample',
                      file_name='FB_sample_data.csv',
                      help='Click to download FB sample data')
 
-display_csv_preview(file_path='assets/twitter_sample.csv', file_name='X sample')
-
 st.markdown('<hr style="border:2px solid gray">', unsafe_allow_html=True)
+
+display_csv_preview(file_path='assets/twitter_sample.csv', file_name='X sample')
 
 show_download_button(file_path='assets/twitter_sample.csv',
                      label='Download X sample',

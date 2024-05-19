@@ -2,6 +2,7 @@ import os
 import streamlit as st
 import time
 from authenticate import check_password
+from utils import show_html_graph
 import streamlit.components.v1 as components
 
 #
@@ -30,12 +31,8 @@ import streamlit.components.v1 as components
 
 st.set_page_config(layout="wide")
 
-file_path = 'assets/recovery_win_betweenness_centrality_size_viz.html'
+show_html_graph('assets/recovery_win_betweenness_centrality_size_viz.html')
 
-with open(file_path, 'r', encoding='utf-8') as f:
-    html_content = f.read()
-
-components.html(html_content, height=600, scrolling=True)
 
 if not check_password():
     st.stop()

@@ -32,5 +32,15 @@ show_download_button(file_path='assets/facebook_sample.csv',
                      file_name='FB_sample_data.csv',
                      help='Click to download FB sample data')
 
-if not check_password():
-    st.stop()
+show_download_button(file_path='assets/twitter_sample.csv',
+                     label='Download X sample',
+                     file_name='X_sample_data.csv',
+                     help='Click to download X sample data')
+
+show_download_button(file_path='assets/telegram_sample.csv',
+                     label='Download TG sample',
+                     file_name='TG_sample_data.csv',
+                     help='Click to download TG sample data')
+
+# if not check_password():
+#     st.stop()
